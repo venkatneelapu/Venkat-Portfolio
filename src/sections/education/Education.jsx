@@ -1,42 +1,45 @@
 import React from 'react';
 import './education.css';
+import { FaUniversity } from "react-icons/fa";
+import { FaSchool } from "react-icons/fa";
+import { FaSchoolFlag } from "react-icons/fa6";
 
 const Education = () => {
   return (
-    <section id='education'>
-      <h2>Education</h2>
-      <div className="education-container">
-        <div className="education-card">
-          <h3>BTech in Computer Science</h3>
-          <p>Lovely Professional University</p>
-          <p>2020-2024</p>
-
-          <h3>Intermediate</h3>
-          <p>Lovely Professional University</p>
-          <p>2018-2020</p>
-
-          <h3>SSC</h3>
-          <p>Lovely Professional University</p>
-          <p>2016-2018</p>
+    <div className="education-container">
+      <h2 className="education-title">Education</h2>
+      <div className="education-item">
+      <div className="education-icon"><FaSchool /></div> 
+        <div className="education-details">
+        <div className="education-year">2019-2020</div>
+          <div className="education-text">
+            10th class
+            Sei Krishna High School
+          </div>
         </div>
-
-        <div className="edu-card">
-          <h3>BTech in Computer Science</h3>
-          <p>Lovely Professional University</p>
-          <p>2020-2024</p>
-
-          <h3>Intermediate</h3>
-          <p>Lovely Professional University</p>
-          <p>2018-2020</p>
-
-          <h3>SSC</h3>
-          <p>Lovely Professional University</p>
-          <p>2016-2018</p>
-        </div>
-        
       </div>
-    </section>
-  )
-}
+      <div className="education-item">
+      <div className="education-icon"><FaSchoolFlag /></div>
+        <div className="education-details">
+        <div className="education-year">2020-2022</div>
+          <div className="education-text">
+            Intermediate
+            Vidwan jr College
+          </div>
+        </div>
+      </div>
+      <div className="education-item">
+      <div className="education-icon"><FaUniversity /></div>
+        <div className="education-details">
+        <div className="education-year">2022-present</div>
+          <div className="education-text">
+            Btech CSE
+            Lovely Professional University
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Education;

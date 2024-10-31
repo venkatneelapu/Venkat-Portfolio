@@ -5,17 +5,17 @@
 }
 
 .portfolio__item{
-    background: var(--color-light);
+    background: var(--color-white);
     padding: 1.2rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     transition: var(--transition);
     text-align: center;
 }
 
 .portfolio__item:hover {
     border-color: var(--color-primary);
-    background: transparent;
+    background: var(--color-white);
 }
 .portfolio__item-image {
     

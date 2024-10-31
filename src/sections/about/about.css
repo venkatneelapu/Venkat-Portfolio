@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 35% 53%;
     gap: 12%;
+    align-items: center;
 }
 
 .about__portrait{
@@ -54,7 +55,22 @@
 .about__right .btn {
     margin-top: 2.5rem;
 }
+.edu{    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+}
+.edu__img{
+    width: 40rem;
+    /* padding: 5rem; */
+    padding-left: 5rem;
+}
 
+/* .education__cont{
+    margin-top: 2rem;
+} */
 
 /* MEDIA QUERIES (tablets) */
 
@@ -72,6 +88,14 @@
 
     .about__right h2 {
         text-align: center;
+    }
+
+    .edu__img{
+        display: none;
+    }
+    .education__cont{
+        width: 100vw;
+        height: 55vh;
     }
 }
 
@@ -92,5 +116,11 @@
         width: 65%;
         margin:0 auto 3rem;
     }
+
+    .education__cont{
+        width: 100vw;
+        height: 50vh;
+    }
+    
     
 }
