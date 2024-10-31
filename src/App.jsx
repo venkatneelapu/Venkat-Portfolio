@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from './sections/navbar/Navbar';
 import Header from './sections/header/Header';
 import About from './sections/about/About';
-import Education from './sections/education/Education';
 import Portfolio from './sections/portfolio/Portfolio';
 import Experience from './sections/experience/Experience';
 import Contact from './sections/contact/Contact';
@@ -18,7 +17,6 @@ const App = () => {
         <Header/>
         <About/>
         <Experience/>
-        {/* <Education/> */}
         <Portfolio/>
         <Contact/>
         <Footer/>

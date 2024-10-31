@@ -16,7 +16,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={Vb} alt="" />
           </div>
-            <h5>This is a portfolio item title</h5>
+            <h5>VB Computers</h5>
             <div className="portfolio__item-cta">
             <a href="https://github.com/venkatneelapu" className='btn' target='_blank'><FaGithub />Github</a>
             <a href="https://vb-computers.onrender.com/" className='btn primary' target='_blank'><MdLiveTv />Demo</a>
@@ -26,7 +26,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={Sparkv} alt="" />
           </div>
-            <h5>This is a portfolio item title</h5>
+            <h5>SparkV's Roadmaps</h5>
             <div className="portfolio__item-cta">
             <a href="https://github.com/venkatneelapu" className='btn' target='_blank'><FaGithub />Github</a>
             <a href="https://sparkv-roadmaps.netlify.app/" className='btn primary' target='_blank'><MdLiveTv />Demo</a>
