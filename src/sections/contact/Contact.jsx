@@ -16,13 +16,13 @@ const Contact = () => {
           <IoMdMail className='contact__option-icon'/>
             <h4>Email</h4>
             <h6>neelapu.venkatanaidu@gmail.com</h6>
-            <a href="mailto:neelapu.venkatanaidu@gmail.com" className='btn'>Send a message <GrSend /></a>
+            <a href="mailto:neelapu.venkatanaidu@gmail.com" className='btn primary'>Send a message <GrSend /></a>
           </article>
           <article className='contact__option'>
           <FaWhatsapp className='contact__option-icon'/>
             <h4>WhatsApp</h4>
             <h6>+91 9603814064</h6>
-            <a href="https://api.whatsapp.com/send?phone=919603814064" target='_blank' className='btn'>Send a message <GrSend /></a>
+            <a href="https://api.whatsapp.com/send?phone=919603814064" target='_blank' className='btn primary'>Send a message <GrSend /></a>
           </article>
         </div>
 
