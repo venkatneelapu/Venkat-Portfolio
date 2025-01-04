@@ -4,6 +4,8 @@ import { FaGithub } from "react-icons/fa";
 import { MdLiveTv } from "react-icons/md";
 import Vb from '../../assets/vb.png';
 import Sparkv from '../../assets/sparkv.png';
+import Hunger from '../../assets/hungerbird.png';
+
 
 
 const Portfolio = () => {
@@ -34,15 +36,15 @@ const Portfolio = () => {
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={Vb} alt="" />
+            <img src={Hunger} alt="" />
           </div>
-            <h5>This is a portfolio item title</h5>
+            <h5>HUNGER-BIRD</h5>
             <div className="portfolio__item-cta">
             <a href="https://github.com/venkatneelapu" className='btn' target='_blank'><FaGithub />Github</a>
-            <a href="https://vb-computers.onrender.com/" className='btn primary' target='_blank'><MdLiveTv />Demo</a>
+            {/* <a href="https://vb-computers.onrender.com/" className='btn primary' target='_blank'><MdLiveTv />Demo</a> */}
             </div>
         </article>
-        <article className='portfolio__item'>
+        {/* <article className='portfolio__item'>
           <div className="portfolio__item-image">
             <img src={Vb} alt="" />
           </div>
@@ -51,8 +53,8 @@ const Portfolio = () => {
             <a href="https://github.com/venkatneelapu" className='btn' target='_blank'><FaGithub />Github</a>
             <a href="https://vb-computers.onrender.com/" className='btn primary' target='_blank'><MdLiveTv />Demo</a>
             </div>
-        </article>
-        <article className='portfolio__item'>
+        </article> */}
+        {/* <article className='portfolio__item'>
           <div className="portfolio__item-image">
             <img src={Vb} alt="" />
           </div>
@@ -61,8 +63,8 @@ const Portfolio = () => {
             <a href="https://github.com/venkatneelapu" className='btn' target='_blank'><FaGithub />Github</a>
             <a href="https://vb-computers.onrender.com/" className='btn primary' target='_blank'><MdLiveTv />Demo</a>
             </div>
-        </article>
-        <article className='portfolio__item'>
+        </article> */}
+        {/* <article className='portfolio__item'>
           <div className="portfolio__item-image">
             <img src={Vb} alt="" />
           </div>
@@ -71,7 +73,7 @@ const Portfolio = () => {
             <a href="https://github.com/venkatneelapu" className='btn' target='_blank'><FaGithub />Github</a>
             <a href="https://vb-computers.onrender.com/" className='btn primary' target='_blank'><MdLiveTv />Demo</a>
             </div>
-        </article>
+        </article> */}
       </div>
     </section>
   )
