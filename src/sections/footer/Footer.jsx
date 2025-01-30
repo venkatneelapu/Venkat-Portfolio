@@ -3,7 +3,11 @@ import './footer.css';
 
 const Footre = () => {
   return (
-    <footer><h2>Footer</h2></footer>
+    <footer>
+      <div className='footer__container'>
+        <p>©2024 All rights reserved to Neelapu Venkata Naidu</p>
+      </div>
+    </footer>
   )
 }
 

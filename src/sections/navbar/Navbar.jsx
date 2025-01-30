@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Logo from '../../assets/IMG-20220627-WA0025.jpg';
+import Logo from '../../assets/my-Img_2.jpg';
 import { MdFormatColorFill } from 'react-icons/md';
 import './navbar.css';
 import data from './data';

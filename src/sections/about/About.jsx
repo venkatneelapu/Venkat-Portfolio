@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutImage from '../../assets/undraw_Profile_re_4a55.png';
 import EduImage from '../../assets/undraw_education_f8ru.png';
-import CV from '../../assets/CV.pdf';
+import CV from '../../assets/Venkat.Neelapu(Fresher).pdf';
 import { FaDownload } from "react-icons/fa6";
 import Card from '../../components/Card';
 import data from './data';

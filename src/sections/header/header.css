@@ -15,8 +15,8 @@ header {
 }
 .header__profile {
     width: 18rem;
-    height: 22rem;
-    border-radius: 7rem;
+    height: 18rem;
+    border-radius: 5rem;
     overflow: hidden;
     margin-bottom: 1.5rem;
 }
@@ -70,7 +70,7 @@ img {
 @media screen and (max-width: 600px) {
     .header__profile{
         width: 14rem;
-        height: 17rem;
+        height: 14rem;
         max-width: 60%;
         max-height: 35vh;
         border-radius: 5rem;
