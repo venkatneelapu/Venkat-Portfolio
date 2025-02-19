@@ -14,7 +14,7 @@ const Education = () => {
         <div className="education-year">2019-2020</div>
           <div className="education-text">
             10th class
-            Sei Krishna High School
+            Sri Krishna High School
           </div>
         </div>
       </div>
