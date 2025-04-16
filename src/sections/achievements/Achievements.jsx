@@ -1,15 +1,11 @@
 import React from "react";
 import "./achievements.css";
+
 import NSS from "../../assets/NSS.png";
 import Canva from "../../assets/canva.png";
-
 import Cricket from "../../assets/Cricket.png";
-// import Hackathon from "../../assets/hackathon.png";
 
-// import AchievementBadge from "../../assets/LPU-NSS-Badge.pdf";
 import AchievementCanva from "../../assets/CANVA_pl.pdf";
-// import AchievementStar from "../../assets/Star-Performer-Certificate.pdf";
-// import AchievementHackathon from "../../assets/Hackathon-Certificate.pdf";
 
 const Achievements = () => {
   return (
