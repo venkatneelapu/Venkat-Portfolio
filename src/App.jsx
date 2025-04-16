@@ -7,6 +7,8 @@ import Experience from './sections/experience/Experience';
 import Contact from './sections/contact/Contact';
 import Footer from './sections/footer/Footer';
 import FloatingNav from './sections/floating-nav/FloatingNav';
+import Certifications from './sections/certifications/Certifications';
+import Achievements from './sections/achievements/Achievements';
 
 
 
@@ -18,6 +20,8 @@ const App = () => {
         <About/>
         <Experience/>
         <Portfolio/>
+        <Certifications/>
+        <Achievements/>
         <Contact/>
         <Footer/>
         <FloatingNav/>
