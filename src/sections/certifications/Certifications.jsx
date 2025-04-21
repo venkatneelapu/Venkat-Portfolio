@@ -6,12 +6,14 @@ import Python from "../../assets/python.png";
 import Frontend from "./../../assets/frontend.png";
 import Backend from "./../../assets/backend.png";
 import Training from "../../assets/training.png";
+import NPTEL from "../../assets/Nptel.png";
 import CertificateStatic from "../../assets/SNQJSQZHPG.pdf";
 import CertificateResponsive from "../../assets/JDDFKVOHNU.pdf";
 import CertificatePython from "../../assets/TDTSUYQGXF.pdf";
 import CertificateFrontend from "../../assets/FrontEnd Coursera NSQL94YHCNHY.pdf";
 import CertificateBackend from "../../assets/backend Coursera 6WCEFJMEH3U9.pdf";
 import CertificateTraining from "../../assets/W3elites-Internship-Certificate.pdf";
+import nptel from "../../assets/Cloud Computing.pdf";
 
 const Certifications = () => {
   return (
@@ -20,11 +22,13 @@ const Certifications = () => {
       <h2>Certifications</h2>
 
       <div className="container certifications__container">
+
         <article className="certifications__item">
           <div className="certifications__item-image">
             <img src={Training} alt="Static Website Certificate" />
           </div>
           <h6>MERN Stack + GenAI</h6>
+          <p>W3elites</p>
           <div className="certifications__item-cta">
             <a
               href={CertificateTraining}
@@ -36,11 +40,13 @@ const Certifications = () => {
             </a>
           </div>
         </article>
+
         <article className="certifications__item">
           <div className="certifications__item-image">
             <img src={Frontend} alt="Static Website Certificate" />
           </div>
           <h6>Frontend Web Developers</h6>
+          <p>Coursera</p>
           <div className="certifications__item-cta">
             <a
               href={CertificateFrontend}
@@ -57,6 +63,7 @@ const Certifications = () => {
             <img src={Backend} alt="Static Website Certificate" />
           </div>
           <h6>Server side JavaScript with Node.js</h6>
+          <p>Coursera</p>
           <div className="certifications__item-cta">
             <a
               href={CertificateBackend}
@@ -73,6 +80,7 @@ const Certifications = () => {
             <img src={Static} alt="Static Website Certificate" />
           </div>
           <h6>Building Your Own Static Websites</h6>
+          <p>NXTWAVE</p>
           <div className="certifications__item-cta">
             <a
               href={CertificateStatic}
@@ -89,6 +97,7 @@ const Certifications = () => {
             <img src={Responsive} alt="Static Website Certificate" />
           </div>
           <h6>Building Your Own Responsive Websites</h6>
+          <p>NXTWAVE</p>
           <div className="certifications__item-cta">
             <a
               href={CertificateResponsive}
@@ -105,6 +114,7 @@ const Certifications = () => {
             <img src={Python} alt="Static Website Certificate" />
           </div>
           <h6>Programming Foundations with Python</h6>
+          <p>NXTWAVE</p>
           <div className="certifications__item-cta">
             <a
               href={CertificatePython}
@@ -116,6 +126,25 @@ const Certifications = () => {
             </a>
           </div>
         </article>
+
+        <article className="certifications__item">
+          <div className="certifications__item-image">
+            <img src={NPTEL} alt="Static Website Certificate" />
+          </div>
+          <h6>Cloud Computing</h6>
+          <p>NPTEL</p>
+          <div className="certifications__item-cta">
+            <a
+              href={nptel}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn"
+            >
+              View
+            </a>
+          </div>
+        </article>
+
       </div>
     </section>
   );
