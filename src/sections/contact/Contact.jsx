@@ -26,12 +26,12 @@ const Contact = () => {
           </article>
         </div>
 
-        <form action=''>
+        {/* <form action=''>
           <input type="text" name='name' placeholder='Your Full Name' required />
           <input type="email" name='email' placeholder='Your Email' required/>
           <textarea name='message' placeholder='Your Message' rows="7" required></textarea>
           <button type="submit" className='btn primary'>Send Message <GrSend /></button>
-        </form>
+        </form> */}
       </div>
       </section>
   )
