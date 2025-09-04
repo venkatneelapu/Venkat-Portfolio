@@ -1,8 +1,14 @@
-.experience__container{
+.experience__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* .experience__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-}
+} */
 
 .skill__img{
     text-align: center;
@@ -65,6 +71,8 @@ h2{
     color: var(--color-primary);
     
 }
+
+
 
 /* MEDIA QUERIES (Tablets) */
 

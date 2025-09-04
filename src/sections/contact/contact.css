@@ -1,13 +1,105 @@
-.container.contact__container{
+.container.contact__container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Contact Options */
+.contact__options {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.contact__option {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  border: 2px solid var(--color-primary);
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact__option:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Icons */
+.contact__option-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  transition: transform 0.3s ease;
+}
+
+.contact__option:hover .contact__option-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Buttons */
+.contact__option a {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.btn.primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn.primary:hover {
+  background: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  transform: translateY(-3px);
+}
+
+/* Responsive - Tablets */
+@media screen and (max-width: 1024px) {
+  .container.contact__container {
+    flex-direction: column;
+  }
+  .contact__options {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+/* Responsive - Phones */
+@media screen and (max-width: 600px) {
+  .container.contact__container {
+    width: 95%;
+    padding: 10px;
+  }
+}
+
+
+
+/* .container.contact__container{
     width: 80%;
     display: flex;
     justify-content: center;
     /* display: grid;
     grid-template-columns: 30% 58%;
     gap: 12%; */
-}
+/* } */
 
-.contact__options {
+/* .contact__options {
     display: flex;
     flex-direction: row;
     gap: 1.2rem;
@@ -35,7 +127,7 @@
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
-}
+} */ 
 
 
 
@@ -60,20 +152,20 @@ input, textarea {
 
 /* MEDIA QUARIES TABLETS */
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .container.contact__container {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     .contact__options {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
     /* gap: 1.2rem; */
-}
-}
+/* }
+} */
 
 /* MEDIA QUARIES PHONES */
-
+/* 
 @media screen and (max-width: 600px) {
     .container.contact__container {
         width: var(--container-width-sm);
@@ -83,4 +175,4 @@ input, textarea {
     .contact__option-icon{
         width: 100px;
     }
-}
+} */

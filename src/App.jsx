@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './sections/navbar/Navbar';
 import Header from './sections/header/Header';
 import About from './sections/about/About';
@@ -10,9 +10,16 @@ import FloatingNav from './sections/floating-nav/FloatingNav';
 import Certifications from './sections/certifications/Certifications';
 import Achievements from './sections/achievements/Achievements';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const App = () => {
+
+   useEffect(() => {
+    AOS.init({ duration: 1200, once: false }); // animate every time on scroll
+  }, []);
+
   return (
     <main>
         <Navbar/>
