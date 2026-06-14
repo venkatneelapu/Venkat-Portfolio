@@ -1,47 +1,95 @@
 nav {
-    width: 100vw;
-    height: 5rem;
-    display: grid;
-    place-items: center;
-    background: var(--color-primary);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9;
-    box-shadow: 0.1rem 0.7rem hsla(var(--primary-hue), 68%, 42%, 20%);
-    transition: var(--transition);
-  }
-  
-  .nav__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav__logo {
-    width: 2.5rem;
-    height: 2.5rem;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-  
+  width: 100vw;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  background: var(--color-primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  box-shadow: 0.1rem 0.7rem hsla(var(--primary-hue), 68%, 42%, 20%);
+  transition: var(--transition);
+}
+
+.nav__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav__logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.nav__name {
+  display: none;
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+
+.nav__menu {
+  display: flex;
+  gap: 3rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+
+.nav__menu a {
+  color: var(--color-white);
+}
+
+.nav__theme-btn {
+  display: none;
+}
+
+/* HIDE NAV MENU ON TABLETS AND PHONES */
+@media screen and (max-width: 1024px) {
   .nav__menu {
-    display: flex;
-    gap: 3rem;
-    cursor: pointer;
+    display: none;
   }
-  
-  #theme__icon {
-    background: transparent;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
+
+
+  nav {
+    padding-inline: 0.9rem;
   }
-  
-  /* HIDE NAV MENU ON TABLETS AND PHONES */
-  @media screen and (max-width: 1024px) {
-    .nav__menu {
-      display: none;
-    }
+
+  .nav__container {
+    justify-content: flex-start;
   }
-  
+
+
+  .nav__name {
+    display: none;
+  }
+}
+
+
+/* EXTRA small phones */
+@media screen and (max-width: 600px) {
+  .nav__name {
+    font-size: 0.8rem;
+    max-width: 10.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+

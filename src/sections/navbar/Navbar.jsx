@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+
 import Logo from '../../assets/my-Img_2.jpg';
-import { MdFormatColorFill } from 'react-icons/md';
 import './navbar.css';
 import data from './data';
-import Theme from '../../theme/Theme'; 
 
 const Navbar = () => {
   const [themePopupVisible, setThemePopupVisible] = useState(false);
@@ -19,16 +18,18 @@ const Navbar = () => {
   useEffect(() => {
     const savedColor = localStorage.getItem('selectedColor');
     if (savedColor) {
-      changeTheme(savedColor); 
+      changeTheme(savedColor);
     }
   }, []);
 
   return (
     <nav>
       <div className="container nav__container">
-        <a href="index.html" className="nav__logo">
+        <div className="nav__logo" aria-label="Brand">
           <img src={Logo} alt="Logo" />
-        </a>
+          <span className="nav__name">Neelapu Venkata Naidu</span>
+        </div>
+
         <ul className="nav__menu">
           {data.map((item) => (
             <li key={item.id}>
@@ -36,17 +37,20 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button id="theme__icon" onClick={toggleThemePopup}>
-          <MdFormatColorFill />
-        </button>
+
+        <button
+          type="button"
+          className="nav__theme-btn"
+          aria-label="Theme"
+          onClick={toggleThemePopup}
+        />
       </div>
 
-      {/* Display the Theme popup if the state is true */}
-      {themePopupVisible && (
-        <Theme onClose={toggleThemePopup} changeTheme={changeTheme} />
-      )}
+      {/* theme popup removed per request */}
+      {themePopupVisible && null}
     </nav>
   );
 };
 
 export default Navbar;
+

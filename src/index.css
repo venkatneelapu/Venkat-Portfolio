@@ -8,6 +8,26 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+iframe,
+embed,
+object {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  scroll-padding-top: 6rem;
+}
+
+
 :root {
     --primary-hue: 270;
     --black-lightness: 15%;
