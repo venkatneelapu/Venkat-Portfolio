@@ -9,6 +9,7 @@ import TODO from '../../assets/todo.png';
 import Med from '../../assets/medicals.png';
 import wik from '../../assets/wik.png';
 import food from '../../assets/food.png';
+import BrandMentions from '../../assets/brandmentions.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -23,6 +24,20 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
 
+        <article className='portfolio__item' data-aos="fade-up">
+          <div className="portfolio__item-image">
+            <img src={BrandMentions} alt="Brand Mentions & PR Monitoring" />
+          </div>
+          <h5>Brand Mentions & PR Monitoring</h5>
+          <p>
+            A MERN-stack platform for tracking brand mentions across web and news sources. Integrated sentiment analysis and risk assessment to evaluate public perception, with automated report generation, email notifications, secure authentication, and interactive analytics dashboards.
+          </p>
+          <div className="portfolio__item-cta">
+            <a href="https://github.com/venkatneelapu/BrandMentionsAndPrMonitor" className='btn' target='_blank'><FaGithub /> Github</a>
+            <a href="https://brandmentionsandprmonitor.netlify.app/" className='btn primary' target='_blank'><MdLiveTv /> Demo</a>
+          </div>
+        </article>
+        
         <article className='portfolio__item' data-aos="fade-up">
           <div className="portfolio__item-image">
             <img src={Sparkv} alt="SparkV Roadmaps" />
@@ -43,6 +58,7 @@ const Portfolio = () => {
             <img src={Vb} alt="VB Computers" />
           </div>
           <h5>VB Computers</h5>
+
           <p>
             A computer sales & service website designed to showcase products,  
             services, and provide smooth client interaction online.
