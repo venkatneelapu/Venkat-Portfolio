@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutImage from '../../assets/undraw_Profile_re_4a55.png';
 import EduImage from '../../assets/undraw_education_f8ru.png';
-import CV from '../../assets/Venkat.Neelapu(Fresher).pdf';
+import CV from '../../assets/NeelapuVenkataNaiduCV.pdf';
 import { FaDownload } from "react-icons/fa6";
 import Card from '../../components/Card';
 import data from './data';
@@ -38,7 +38,7 @@ function About() {
           </p>
 
           <p data-aos="fade-up" data-aos-delay="400">
-            Hi, my name is Neelapu Venkata Naidu from Andhra Pradesh. I'm currently pursuing my 3rd year in BTech at Lovely Professional University...
+            Hi, my name is Neelapu Venkata Naidu from Andhra Pradesh. I have completed my BTech at Lovely Professional University.
           </p>
 
           <a href={CV} download className='btn primary' data-aos="zoom-in" data-aos-delay="600">
@@ -66,7 +66,7 @@ export default About;
 // import React from 'react';
 // import AboutImage from '../../assets/undraw_Profile_re_4a55.png';
 // import EduImage from '../../assets/undraw_education_f8ru.png';
-// import CV from '../../assets/Venkat.Neelapu(Fresher).pdf';
+// import CV from '../../assets/NeelapuVenkataNaiduCV.pdf';
 // import { FaDownload } from "react-icons/fa6";
 // import Card from '../../components/Card';
 // import data from './data';
